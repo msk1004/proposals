@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>エステティック通信 10月号 掲載提案書 ｜ ビスタンス様</title>
+<style>
+  :root {
+    --gold: #c9a84c;
+    --gold-light: #e8d5a3;
+    --dark: #1a1a2e;
+    --navy: #16213e;
+    --accent: #0f3460;
+    --white: #ffffff;
+    --gray: #f8f8f8;
+    --text: #333333;
+    --border: #e0e0e0;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Hiragino Mincho ProN', 'Yu Mincho', 'YuMincho', Georgia, serif;
+    color: var(--text);
+    background: #fafafa;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  /* ========== COVER ========== */
+  .cover {
+    background: linear-gradient(135deg, var(--dark) 0%, var(--navy) 60%, var(--accent) 100%);
+    color: var(--white);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 40px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cover::before {
+    content: '';
+    position: absolute;
+    top: -100px; right: -100px;
+    width: 400px; height: 400px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(201,168,76,0.15) 0%, transparent 70%);
+  }
+
+  .cover::after {
+    content: '';
+    position: absolute;
+    bottom: -80px; left: -80px;
+    width: 300px; height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(201,168,76,0.1) 0%, transparent 70%);
+  }
+
+  .cover-label {
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+
+  .cover-main-title {
+    font-size: 13px;
+    color: var(--gold-light);
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+
+  .cover-headline {
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 1.3;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+  }
+
+  .cover-sub {
+    font-size: 20px;
+    color: var(--gold-light);
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+  }
+
+  .cover-divider {
+    width: 60px;
+    height: 2px;
+    background: var(--gold);
+    margin: 0 auto 40px;
+  }
+
+  .cover-issue {
+    background: rgba(201,168,76,0.15);
+    border: 1px solid rgba(201,168,76,0.4);
+    border-radius: 4px;
+    padding: 16px 40px;
+    margin-bottom: 40px;
+  }
+
+  .cover-issue p {
+    font-size: 15px;
+    color: var(--gold-light);
+    letter-spacing: 1px;
+  }
+
+  .cover-issue span {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--gold);
+  }
+
+  .cover-to {
+    font-size: 13px;
+    color: rgba(255,255,255,0.6);
+    margin-top: 48px;
+    letter-spacing: 1px;
+  }
+
+  .cover-from {
+    font-size: 12px;
+    color: rgba(255,255,255,0.4);
+    margin-top: 8px;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+
+  /* ========== SECTIONS ========== */
+  .page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 80px 40px;
+  }
+
+  .section-label {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+    letter-spacing: 5px;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  .section-title {
+    font-size: 26px;
+    color: var(--dark);
+    margin-bottom: 6px;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+
+  .section-subtitle {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 40px;
+  }
+
+  .section-divider {
+    width: 40px;
+    height: 2px;
+    background: var(--gold);
+    margin-bottom: 40px;
+  }
+
+  /* ========== MARKET ========== */
+  .bg-dark-section {
+    background: var(--dark);
+    color: var(--white);
+    padding: 80px 40px;
+  }
+
+  .bg-dark-section .section-title { color: var(--white); }
+  .bg-dark-section .section-subtitle { color: rgba(255,255,255,0.6); }
+
+  .market-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 48px;
+  }
+
+  .stat-card {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(201,168,76,0.3);
+    border-radius: 8px;
+    padding: 28px 24px;
+    text-align: center;
+  }
+
+  .stat-number {
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--gold);
+    display: block;
+    margin-bottom: 4px;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+
+  .stat-label {
+    font-size: 12px;
+    color: rgba(255,255,255,0.7);
+    line-height: 1.5;
+  }
+
+  .market-shift {
+    display: grid;
+    grid-template-columns: 1fr 60px 1fr;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 48px;
+  }
+
+  .shift-box {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 8px;
+    padding: 24px;
+  }
+
+  .shift-box.to {
+    background: rgba(201,168,76,0.08);
+    border-color: rgba(201,168,76,0.4);
+  }
+
+  .shift-tag {
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #888;
+    margin-bottom: 8px;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+
+  .shift-box.to .shift-tag { color: var(--gold); }
+
+  .shift-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 8px;
+  }
+
+  .shift-box.to .shift-title { color: var(--white); }
+
+  .shift-desc {
+    font-size: 12px;
+    color: rgba(255,255,255,0.5);
+    line-height: 1.7;
+  }
+
+  .arrow-box {
+    text-align: center;
+    font-size: 28px;
+    color: var(--gold);
+  }
+
+  .needs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .need-card {
+    background: rgba(255,255,255,0.05);
+    border-left: 3px solid var(--gold);
+    border-radius: 0 8px 8px 0;
+    padding: 20px;
+  }
+
+  .need-num {
+    font-size: 11px;
+    color: var(--gold);
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+
+  .need-title {
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--white);
+    margin-bottom: 6px;
+  }
+
+  .need-desc {
+    font-size: 12px;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.7;
+  }
+
+  /* ========== KLOSOME ========== */
+  .klosome-hero {
+    background: linear-gradient(135deg, #0a1628 0%, #0f2744 100%);
+    border: 1px solid rgba(201,168,76,0.3);
+    border-radius: 12px;
+    padding: 48px;
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .klosome-hero::before {
+    content: 'KLOSOME®';
+    position: absolute;
+    right: -20px; top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+    font-size: 80px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: rgba(201,168,76,0.04);
+    letter-spacing: 8px;
+    pointer-events: none;
+  }
+
+  .klosome-badge {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--dark);
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding: 4px 12px;
+    border-radius: 2px;
+    margin-bottom: 16px;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+
+  .klosome-name {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--white);
+    margin-bottom: 8px;
+    font-family: 'Helvetica Neue', sans-serif;
+    letter-spacing: 3px;
+  }
+
+  .klosome-tagline {
+    font-size: 16px;
+    color: var(--gold-light);
+    margin-bottom: 32px;
+  }
+
+  .klosome-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .feature-item {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .feature-icon {
+    width: 32px;
+    height: 32px;
+    background: rgba(201,168,76,0.15);
+    border: 1px solid rgba(201,168,76,0.4);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--gold);
+    font-size: 14px;
+  }
+
+  .feature-text strong {
+    display: block;
+    color: var(--white);
+    font-size: 13px;
+    margin-bottom: 2px;
+  }
+
+  .feature-text span {
+    color: rgba(255,255,255,0.5);
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .connection-block {
+    background: var(--gray);
+    border-radius: 12px;
+    padding: 40px;
+  }
+
+  .connection-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--dark);
+    margin-bottom: 24px;
+    text-align: center;
+  }
+
+  .connection-grid {
+    display: grid;
+    grid-template-columns: 1fr 40px 1fr;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .conn-left, .conn-right {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+  }
+
+  .conn-left { border-top: 3px solid #888; }
+  .conn-right { border-top: 3px solid var(--gold); }
+
+  .conn-label {
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #999;
+    margin-bottom: 8px;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+
+  .conn-right .conn-label { color: var(--gold); }
+
+  .conn-point {
+    font-size: 14px;
+    color: var(--dark);
+    margin-bottom: 6px;
+    padding-left: 12px;
+    border-left: 2px solid #ddd;
+    line-height: 1.6;
+  }
+
+  .conn-right .conn-point { border-left-color: var(--gold); }
+
+  .conn-arrow { text-align: center; font-size: 20px; color: var(--gold); }
+
+  /* ========== PLANS ========== */
+  .bg-gray-section {
+    background: var(--gray);
+    padding: 80px 40px;
+  }
+
+  .plans-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .plan-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.06);
+    position: relative;
+  }
+
+  .plan-card.featured {
+    box-shadow: 0 4px 40px rgba(201,168,76,0.2);
+    transform: translateY(-8px);
+  }
+
+  .plan-ribbon {
+    background: var(--gold);
+    color: var(--dark);
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    padding: 6px;
+    letter-spacing: 2px;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+
+  .plan-header {
+    background: var(--dark);
+    padding: 28px 24px;
+    text-align: center;
+  }
+
+  .plan-card.featured .plan-header {
+    background: linear-gradient(135deg, var(--dark) 0%, var(--accent) 100%);
+  }
+
+  .plan-type {
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: var(--gold);
+    margin-bottom: 8px;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+
+  .plan-name {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+
+  .plan-size {
+    font-size: 12px;
+    color: rgba(255,255,255,0.5);
+  }
+
+  .plan-body {
+    padding: 24px;
+  }
+
+  .plan-price {
+    text-align: center;
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .price-note {
+    font-size: 11px;
+    color: #999;
+    margin-bottom: 4px;
+  }
+
+  .price-value {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--dark);
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+
+  .plan-card.featured .price-value { color: var(--gold); }
+
+  .price-unit {
+    font-size: 13px;
+    color: #666;
+  }
+
+  .price-tax {
+    font-size: 11px;
+    color: #999;
+    margin-top: 2px;
+  }
+
+  .plan-features {
+    list-style: none;
+    margin-bottom: 24px;
+  }
+
+  .plan-features li {
+    font-size: 13px;
+    color: var(--text);
+    padding: 6px 0;
+    border-bottom: 1px dashed #f0f0f0;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .plan-features li::before {
+    content: '✓';
+    color: var(--gold);
+    font-weight: bold;
+    flex-shrink: 0;
+  }
+
+  .plan-merit {
+    background: #fffdf5;
+    border: 1px solid var(--gold-light);
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 12px;
+    color: #666;
+    line-height: 1.7;
+  }
+
+  .plan-merit strong {
+    color: var(--dark);
+    display: block;
+    margin-bottom: 4px;
+    font-size: 12px;
+  }
+
+  /* ========== SCHEDULE ========== */
+  .schedule-timeline {
+    display: flex;
+    gap: 0;
+    margin-bottom: 40px;
+    position: relative;
+  }
+
+  .timeline-item {
+    flex: 1;
+    text-align: center;
+    position: relative;
+  }
+
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    right: -50%;
+    height: 2px;
+    background: var(--border);
+  }
+
+  .timeline-item:last-child::before { display: none; }
+
+  .timeline-item.active::before { background: var(--gold); }
+
+  .timeline-dot {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--border);
+    margin: 0 auto 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    position: relative;
+    z-index: 1;
+    color: #999;
+  }
+
+  .timeline-item.active .timeline-dot {
+    background: var(--gold);
+    color: var(--dark);
+    font-weight: bold;
+  }
+
+  .timeline-item.urgent .timeline-dot {
+    background: #e74c3c;
+    color: white;
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(231,76,60,0.4); }
+    50% { box-shadow: 0 0 0 8px rgba(231,76,60,0); }
+  }
+
+  .timeline-date {
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--dark);
+    margin-bottom: 4px;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+
+  .timeline-label {
+    font-size: 11px;
+    color: #888;
+    line-height: 1.5;
+  }
+
+  .timeline-item.urgent .timeline-date { color: #e74c3c; }
+
+  .urgency-box {
+    background: linear-gradient(135deg, #1a0f00, #2d1800);
+    border: 1px solid #c9a84c;
+    border-radius: 12px;
+    padding: 32px 40px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .urgency-box p {
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+
+  .urgency-date {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--gold);
+    letter-spacing: 1px;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+
+  .urgency-box small {
+    display: block;
+    color: rgba(255,255,255,0.4);
+    font-size: 11px;
+    margin-top: 8px;
+  }
+
+  /* ========== FOOTER ========== */
+  .proposal-footer {
+    background: var(--dark);
+    color: rgba(255,255,255,0.5);
+    padding: 40px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 2;
+  }
+
+  .proposal-footer strong {
+    color: var(--gold);
+    font-size: 16px;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  /* ========== UTILITY ========== */
+  .highlight-text {
+    background: linear-gradient(to right, var(--gold), #e8d080);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .page-break {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 0;
+  }
+
+  .intro-box {
+    background: white;
+    border-left: 4px solid var(--gold);
+    border-radius: 0 8px 8px 0;
+    padding: 24px 28px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  }
+
+  .intro-box p {
+    font-size: 14px;
+    line-height: 2;
+    color: #444;
+  }
+
+  .tag {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--dark);
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 2px 8px;
+    border-radius: 2px;
+    font-family: 'Helvetica Neue', sans-serif;
+    margin-right: 6px;
+  }
+
+  .tag.outline {
+    background: transparent;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+  }
+</style>
+</head>
+<body>
+
+<!-- ============================
+  COVER
+============================= -->
+<div class="cover">
+  <div class="cover-label">Advertising Proposal</div>
+  <p class="cover-main-title">エステティック通信 2026年10月号</p>
+  <h1 class="cover-headline">メニュー・メソッド特集<br>掲載のご提案</h1>
+  <p class="cover-sub">KLOSOME® × エス通 10月号</p>
+  <div class="cover-divider"></div>
+  <div class="cover-issue">
+    <p>申込締切まで</p>
+    <span>7月22日（水）</span>
+    <p style="margin-top:4px;font-size:12px;">素材締切：7月31日（金）　発行：9月10日</p>
+  </div>
+  <p class="cover-to">ビスタンス 御中</p>
+  <p class="cover-from">株式会社新東通信 エステティック通信チーム</p>
+</div>
+
+<!-- ============================
+  MARKET
+============================= -->
+<div class="bg-dark-section">
+  <div class="page" style="padding-top:0;padding-bottom:0;">
+    <p class="section-label">Market Context</p>
+    <h2 class="section-title">エステ市場は「体験価値」時代へ</h2>
+    <p class="section-subtitle" style="margin-bottom:40px;">10月号が読者に届けるタイミングの背景</p>
+
+    <div class="market-stats">
+      <div class="stat-card">
+        <span class="stat-number">3,043億円</span>
+        <span class="stat-label">国内エステ市場規模<br>（矢野経済研究所）</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">90%</span>
+        <span class="stat-label">高単価メニュー利用率<br>（前年比 +6.8pt）</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">2万部</span>
+        <span class="stat-label">エス通月間発行部数<br>読者の90%が決裁権者</span>
+      </div>
+    </div>
+
+    <div class="market-shift">
+      <div class="shift-box">
+        <p class="shift-tag">FROM</p>
+        <p class="shift-title">価格競争</p>
+        <p class="shift-desc">コモディティ化が進む市場。価格のみで選ばれ続ける限界。脱毛分野は▲672億円の縮小。</p>
+      </div>
+      <div class="arrow-box">→</div>
+      <div class="shift-box to">
+        <p class="shift-tag">TO（勝ち筋）</p>
+        <p class="shift-title">体験価値競争</p>
+        <p class="shift-desc">「このサロンでなければ」と選ばれる独自メソッドを持つサロンが高単価・高リピートを実現。フェイシャル分野は＋87億円の成長。</p>
+      </div>
+    </div>
+
+    <p style="font-size:13px;color:rgba(255,255,255,0.5);margin-bottom:20px;text-align:center;">サロンオーナーが今、最も求めているのは ——</p>
+
+    <div class="needs-grid">
+      <div class="need-card">
+        <p class="need-num">NEED 01</p>
+        <p class="need-title">差別化メソッド</p>
+        <p class="need-desc">他では受けられない、根拠のある施術でロコミとリピートを生みたい。</p>
+      </div>
+      <div class="need-card">
+        <p class="need-num">NEED 02</p>
+        <p class="need-title">技術体系化</p>
+        <p class="need-desc">再現性のある教育で退職リスクを下げ、品質を均一化させたい。</p>
+      </div>
+      <div class="need-card">
+        <p class="need-num">NEED 03</p>
+        <p class="need-title">資格・認定の信頼</p>
+        <p class="need-desc">「○○資格保有」の肩書きで集客・高単価化の導線を作りたい。</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================
+  KLOSOME
+============================= -->
+<div class="page">
+  <p class="section-label">Product Strength</p>
+  <h2 class="section-title">KLOSOMEが持つ、圧倒的な差別化力</h2>
+  <p class="section-subtitle">次世代スキンブースター KLOSOME® の強みを整理</p>
+  <div class="section-divider"></div>
+
+  <div class="klosome-hero">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:32px;">
+      <img src="PNB_KLOSOME_SCENE_25-2.png" alt="KLOSOME シーン" style="width:100%;border-radius:8px;object-fit:cover;aspect-ratio:1/1;">
+      <img src="KLOSOME_SCENE_16-2-768x768.png" alt="KLOSOME シーン" style="width:100%;border-radius:8px;object-fit:cover;aspect-ratio:1/1;">
+    </div>
+    <div class="klosome-badge">NEXT GENERATION SKIN BOOSTER</div>
+    <p class="klosome-name">KLOSOME®</p>
+    <p class="klosome-tagline">Klotho × Exosome —— 皮膚細胞の年齢から変える</p>
+    <div class="klosome-features">
+      <div class="feature-item">
+        <div class="feature-icon">①</div>
+        <div class="feature-text">
+          <strong>特許技術による独自配合</strong>
+          <span>健康なヒト腎臓由来幹細胞のエクソソームに抗老化タンパク質「Klotho」を組み合わせた素材特許・用途特許取得済みの独自技術</span>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">②</div>
+        <div class="feature-text">
+          <strong>最高レベルGMP施設製造</strong>
+          <span>EHLBIO（韓国江南）の最高グレード製造施設で品質管理。安全性・安定性を担保</span>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">③</div>
+        <div class="feature-text">
+          <strong>1回施術での即効体験</strong>
+          <span>「一度の施術でモテ期の肌に戻す」圧倒的な即効性で顧客の感動体験を創出</span>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">④</div>
+        <div class="feature-text">
+          <strong>高付加価値メニュー化</strong>
+          <span>従来の施術との差別化による高単価メニュー設定が可能。サロンの客単価アップに直結</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="connection-block">
+    <p class="connection-title">🔗 読者ニーズ × KLOSOMEの接点</p>
+    <div class="connection-grid">
+      <div class="conn-left">
+        <p class="conn-label">READER NEEDS（10月号読者）</p>
+        <p class="conn-point">独自メソッドで他サロンと差別化したい</p>
+        <p class="conn-point">根拠のある施術で高単価を正当化したい</p>
+        <p class="conn-point">スタッフが習得できる体系化された技術を求めている</p>
+      </div>
+      <div class="conn-arrow">⟵⟶</div>
+      <div class="conn-right">
+        <p class="conn-label">KLOSOME® の提供価値</p>
+        <p class="conn-point">特許技術で他では受けられない唯一無二の施術を実現</p>
+        <p class="conn-point">Klotho×エクソソームの科学的根拠で高単価を正当化</p>
+        <p class="conn-point">代理店ビスタンスによる導入サポート・メソッド提供</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="page-break">
+
+<!-- ============================
+  WHY OCT
+============================= -->
+<div class="bg-dark-section">
+  <div class="page" style="padding-top:0;padding-bottom:0;">
+    <p class="section-label">Why October Issue</p>
+    <h2 class="section-title">なぜ10月号なのか</h2>
+    <p class="section-subtitle" style="margin-bottom:40px;">KLOSOMEのブランディングに最適なタイミングである3つの理由</p>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+      <div style="background:rgba(255,255,255,0.05);border-radius:12px;padding:28px;">
+        <div style="font-size:32px;margin-bottom:16px;">📋</div>
+        <p style="color:var(--gold);font-size:11px;letter-spacing:3px;margin-bottom:8px;font-family:'Helvetica Neue',sans-serif;">REASON 01</p>
+        <p style="font-size:16px;font-weight:bold;color:white;margin-bottom:10px;">年度計画の意思決定期</p>
+        <p style="font-size:12px;color:rgba(255,255,255,0.6);line-height:1.8;">10月号が届く9月は、翌年のメニュー刷新・教育投資の意思決定が集中するタイミング。サロンオーナーが最も「新しい施術・商材」に積極的な時期にKLOSOMEを届けられる。</p>
+      </div>
+      <div style="background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.3);border-radius:12px;padding:28px;">
+        <div style="font-size:32px;margin-bottom:16px;">🎯</div>
+        <p style="color:var(--gold);font-size:11px;letter-spacing:3px;margin-bottom:8px;font-family:'Helvetica Neue',sans-serif;">REASON 02</p>
+        <p style="font-size:16px;font-weight:bold;color:white;margin-bottom:10px;">特集テーマとの完全一致</p>
+        <p style="font-size:12px;color:rgba(255,255,255,0.6);line-height:1.8;">「メニュー・メソッド特集」は差別化施術を探すオーナーに直接リーチする特集。KLOSOMEの「独自メソッドで差別化・高単価化」という価値提案と読者ニーズが完璧に重なる。</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.05);border-radius:12px;padding:28px;">
+        <div style="font-size:32px;margin-bottom:16px;">📱</div>
+        <p style="color:var(--gold);font-size:11px;letter-spacing:3px;margin-bottom:8px;font-family:'Helvetica Neue',sans-serif;">REASON 03</p>
+        <p style="font-size:16px;font-weight:bold;color:white;margin-bottom:10px;">誌面＋LINEの複合接点</p>
+        <p style="font-size:12px;color:rgba(255,255,255,0.6);line-height:1.8;">全プランにLINE配信が付帯。LINE会員2,700名（開封率70%以上）への追加リーチで誌面単体より広い接触機会を創出。掲載後2次利用でSNS展開も解禁される。</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================
+  PLANS
+============================= -->
+<div class="bg-gray-section">
+  <div style="max-width:900px;margin:0 auto;">
+    <p class="section-label" style="text-align:center;">Advertising Plans</p>
+    <h2 class="section-title" style="text-align:center;">掲載プランのご提案</h2>
+    <p class="section-subtitle" style="text-align:center;margin-bottom:48px;">ビスタンス様向け特別価格（税別）</p>
+
+    <div class="plans-grid">
+
+      <!-- Plan 1 -->
+      <div class="plan-card">
+        <div class="plan-header">
+          <p class="plan-type">PLAN A</p>
+          <p class="plan-name">特集タイアップ記事</p>
+          <p class="plan-size">誌面 1P ＋ WEB転載 ＋ LINE配信</p>
+        </div>
+        <div class="plan-body">
+          <div class="plan-price">
+            <p class="price-note">特別価格</p>
+            <span class="price-value">200,000</span>
+            <span class="price-unit"> 円</span>
+            <p class="price-tax">税別</p>
+          </div>
+          <ul class="plan-features">
+            <li>エス通フォーマットのタイアップ記事</li>
+            <li>KLOSOME® の特徴・根拠を掲載</li>
+            <li>サロン活用事例・導入効果を紹介</li>
+            <li>WEBサイト転載（掲載翌月〜）</li>
+            <li>LINE会員2,700名への配信付</li>
+          </ul>
+          <div class="plan-merit">
+            <strong>こんな方に</strong>
+            まずKLOSOMEをサロンオーナーに認知させたい。特集枠で訴求力を最大化しつつコストを抑えたい方向け。
+          </div>
+        </div>
+      </div>
+
+      <!-- Plan 2 (featured) -->
+      <div class="plan-card featured">
+        <div class="plan-ribbon">★ RECOMMENDED</div>
+        <div class="plan-header">
+          <p class="plan-type">PLAN B</p>
+          <p class="plan-name">オリジナル記事広告</p>
+          <p class="plan-size">誌面 1P（完全オリジナル） ＋ 撮影込</p>
+        </div>
+        <div class="plan-body">
+          <div class="plan-price">
+            <p class="price-note" style="color:var(--gold);">撮影費込み</p>
+            <span class="price-value">300,000</span>
+            <span class="price-unit"> 円</span>
+            <p class="price-tax">税別</p>
+          </div>
+          <ul class="plan-features">
+            <li>ブランドに合わせた完全オリジナルデザイン</li>
+            <li>プロ撮影による高品質ビジュアル制作</li>
+            <li>KLOSOME®の世界観を最大限に表現</li>
+            <li>WEBサイト転載（掲載翌月〜）</li>
+            <li>LINE会員2,700名への配信付</li>
+            <li>2次利用データ提供（SNS展開可）</li>
+          </ul>
+          <div class="plan-merit" style="background:#fffbf0;border-color:#c9a84c;">
+            <strong>おすすめポイント</strong>
+            ブランドカラー・世界観を崩さずにKLOSOMEの魅力を最大化。撮影費込みなので追加費用不要。SNS2次利用で費用対効果が高い。
+          </div>
+        </div>
+      </div>
+
+      <!-- Plan 3 -->
+      <div class="plan-card">
+        <div class="plan-header">
+          <p class="plan-type">PLAN C</p>
+          <p class="plan-name">オリジナル記事広告</p>
+          <p class="plan-size">誌面 見開き（完全オリジナル） ＋ 撮影込</p>
+        </div>
+        <div class="plan-body">
+          <div class="plan-price">
+            <p class="price-note">最大インパクト</p>
+            <span class="price-value">450,000</span>
+            <span class="price-unit"> 円</span>
+            <p class="price-tax">税別</p>
+          </div>
+          <ul class="plan-features">
+            <li>見開き2P＝最大の誌面占有率</li>
+            <li>プロ撮影による高品質ビジュアル制作</li>
+            <li>ストーリー展開型レイアウトが可能</li>
+            <li>WEBサイト転載（掲載翌月〜）</li>
+            <li>LINE会員2,700名への配信付</li>
+            <li>2次利用データ提供（SNS展開可）</li>
+          </ul>
+          <div class="plan-merit">
+            <strong>こんな方に</strong>
+            エクソソームの科学的背景・Before/After・代理店ビスタンスの強みを余白を活かしてすべて伝えたい方向け。
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="max-width:700px;margin:32px auto 0;background:white;border-radius:8px;padding:24px;text-align:center;box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+      <p style="font-size:12px;color:#888;margin-bottom:12px;">全プラン共通特典</p>
+      <div style="display:flex;justify-content:center;gap:16px;flex-wrap:wrap;">
+        <span class="tag">誌面掲載</span>
+        <span class="tag">WEB転載</span>
+        <span class="tag outline">LINE配信（2,700名）</span>
+        <span class="tag outline">SNS 2次利用可</span>
+        <span class="tag outline">開封率 70%以上</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================
+  SCHEDULE
+============================= -->
+<div class="page">
+  <p class="section-label">Schedule</p>
+  <h2 class="section-title">実施スケジュール</h2>
+  <div class="section-divider"></div>
+
+  <div class="urgency-box">
+    <p>お申込み締切まで、あとわずかです</p>
+    <span class="urgency-date">申込締切：2026年 7月22日（水）</span>
+    <small>掲載枠は限定数のため、早めのご連絡をお願いいたします</small>
+  </div>
+
+  <div class="schedule-timeline">
+    <div class="timeline-item urgent">
+      <div class="timeline-dot">🔔</div>
+      <div class="timeline-date">7/22（水）</div>
+      <div class="timeline-label">広告申込<br>締切</div>
+    </div>
+    <div class="timeline-item active">
+      <div class="timeline-dot">📸</div>
+      <div class="timeline-date">7/31（金）</div>
+      <div class="timeline-label">取材・素材<br>入稿締切</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot">📄</div>
+      <div class="timeline-date">8月</div>
+      <div class="timeline-label">校正・<br>制作作業</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot">📰</div>
+      <div class="timeline-date">9/10（木）</div>
+      <div class="timeline-label">誌面発行・<br>LINE配信</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot">🌐</div>
+      <div class="timeline-date">10月〜</div>
+      <div class="timeline-label">WEB転載・<br>SNS 2次利用</div>
+    </div>
+  </div>
+
+  <div style="background:#f8f8f8;border-radius:12px;padding:32px;">
+    <p style="font-size:14px;font-weight:bold;color:var(--dark);margin-bottom:20px;">10月号が届く9月は——</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+      <div style="padding-left:16px;border-left:3px solid var(--gold);">
+        <p style="font-size:14px;color:var(--dark);margin-bottom:4px;">✓ サロンの翌年計画立案期</p>
+        <p style="font-size:12px;color:#888;">新メニュー・新商材への意思決定が最も集中する時期</p>
+      </div>
+      <div style="padding-left:16px;border-left:3px solid var(--gold);">
+        <p style="font-size:14px;color:var(--dark);margin-bottom:4px;">✓ 開業予定者の流入ピーク</p>
+        <p style="font-size:12px;color:#888;">LINE会員の約1割が新規開業予定者。新規代理店開拓にも最適</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================
+  CONTACT
+============================= -->
+<div class="bg-dark-section" style="padding:60px 40px;">
+  <div style="max-width:680px;margin:0 auto;text-align:center;">
+    <p class="section-label">Next Action</p>
+    <h2 class="section-title" style="color:white;margin-bottom:8px;">まずはお気軽にご連絡ください</h2>
+    <p style="color:rgba(255,255,255,0.5);margin-bottom:40px;">掲載内容・料金・オプションについてご相談承ります</p>
+
+    <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,168,76,0.3);border-radius:12px;padding:36px 40px;text-align:left;display:inline-block;min-width:400px;">
+      <p style="color:var(--gold);font-size:11px;letter-spacing:3px;margin-bottom:16px;font-family:'Helvetica Neue',sans-serif;">CONTACT</p>
+      <p style="color:white;font-size:18px;font-weight:bold;margin-bottom:4px;">エステティック通信　成瀬匡輝</p>
+      <p style="color:rgba(255,255,255,0.5);font-size:13px;margin-bottom:20px;">株式会社新東通信</p>
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <div style="display:flex;gap:16px;align-items:center;">
+          <span style="color:var(--gold);font-size:11px;letter-spacing:2px;width:50px;font-family:'Helvetica Neue',sans-serif;">TEL</span>
+          <span style="color:white;font-size:16px;font-family:'Helvetica Neue',sans-serif;">03-4500-7480</span>
+        </div>
+        <div style="display:flex;gap:16px;align-items:center;">
+          <span style="color:var(--gold);font-size:11px;letter-spacing:2px;width:50px;font-family:'Helvetica Neue',sans-serif;">MAIL</span>
+          <span style="color:white;font-size:13px;">estsu.info@shinto-tsushin.co.jp</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================
+  SPECIAL OFFER
+============================= -->
+<div class="page">
+  <div style="background:linear-gradient(135deg,#1a0a00,#2d1500);border:2px solid var(--gold);border-radius:16px;padding:48px;position:relative;overflow:hidden;">
+    <div style="position:absolute;top:16px;right:24px;background:var(--gold);color:var(--dark);font-size:10px;font-weight:bold;letter-spacing:3px;padding:6px 16px;border-radius:2px;font-family:'Helvetica Neue',sans-serif;">LIMITED OFFER</div>
+    <p style="color:var(--gold);font-size:11px;letter-spacing:4px;margin-bottom:12px;font-family:'Helvetica Neue',sans-serif;">SPECIAL VACANCY OFFER</p>
+    <h2 style="color:white;font-size:24px;font-weight:bold;margin-bottom:8px;line-height:1.4;">9月号にブランド枠の空きが出ました<br><span style="color:var(--gold);">— 特別価格でご案内します</span></h2>
+    <p style="color:rgba(255,255,255,0.5);font-size:13px;margin-bottom:40px;">10月号とあわせてご検討いただくと、2号連続の認知強化が実現します</p>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:36px;">
+
+      <!-- 表4 -->
+      <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(201,168,76,0.4);border-radius:12px;padding:28px;">
+        <p style="color:var(--gold);font-size:10px;letter-spacing:3px;margin-bottom:10px;font-family:'Helvetica Neue',sans-serif;">BACK COVER</p>
+        <p style="color:white;font-size:18px;font-weight:bold;margin-bottom:4px;">表4（裏表紙）</p>
+        <p style="color:rgba(255,255,255,0.4);font-size:12px;margin-bottom:24px;">最も目に触れるプレミアム掲載位置</p>
+        <div style="margin-bottom:16px;">
+          <p style="color:rgba(255,255,255,0.4);font-size:11px;text-decoration:line-through;margin-bottom:4px;">定価 ¥700,000</p>
+          <p style="color:var(--gold);font-size:32px;font-weight:bold;font-family:'Helvetica Neue',sans-serif;">¥300,000</p>
+          <p style="color:rgba(255,255,255,0.5);font-size:11px;">税別　／　定価比 57%OFF</p>
+        </div>
+      </div>
+
+      <!-- 先頭見開き -->
+      <div style="background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.5);border-radius:12px;padding:28px;">
+        <p style="color:var(--gold);font-size:10px;letter-spacing:3px;margin-bottom:10px;font-family:'Helvetica Neue',sans-serif;">FRONT SPREAD</p>
+        <p style="color:white;font-size:18px;font-weight:bold;margin-bottom:4px;">ファーストインプレッション</p>
+        <p style="color:rgba(255,255,255,0.4);font-size:12px;margin-bottom:24px;">雑誌を開いた瞬間に目に入る先頭見開き</p>
+        <div style="margin-bottom:16px;">
+          <p style="color:rgba(255,255,255,0.4);font-size:11px;text-decoration:line-through;margin-bottom:4px;">定価 ¥600,000</p>
+          <p style="color:var(--gold);font-size:32px;font-weight:bold;font-family:'Helvetica Neue',sans-serif;">¥250,000</p>
+          <p style="color:rgba(255,255,255,0.5);font-size:11px;">税別　／　定価比 58%OFF</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="background:rgba(231,76,60,0.12);border:1px solid rgba(231,76,60,0.4);border-radius:8px;padding:20px 24px;display:flex;align-items:center;gap:20px;">
+      <div style="font-size:28px;">⚡</div>
+      <div>
+        <p style="color:#ff8a80;font-size:12px;font-weight:bold;letter-spacing:2px;margin-bottom:4px;">入稿〆切</p>
+        <p style="color:white;font-size:20px;font-weight:bold;font-family:'Helvetica Neue',sans-serif;">2026年 7月16日（木）</p>
+        <p style="color:rgba(255,255,255,0.4);font-size:11px;margin-top:2px;">空き枠のため先着順。ご連絡はお早めに。</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================
+  FOOTER
+============================= -->
+<div class="proposal-footer">
+  <strong>エステティック通信 掲載提案書</strong>
+  2026年6月30日　株式会社新東通信 エステティック通信チーム<br>
+  本資料の内容は提案時点の情報に基づいており、変更になる場合があります。<br>
+  記載の価格はすべて税別表示です。
+</div>
+
+</body>
+</html>
