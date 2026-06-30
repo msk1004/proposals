@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>企画提案書｜エステティック通信 10月号 メニュー・メソッド特集</title>
+<style>
+  :root {
+    --primary: #1a2e4a;
+    --accent: #c9a84c;
+    --accent-light: #f5edda;
+    --text: #1e1e1e;
+    --muted: #666;
+    --bg: #f8f7f4;
+    --white: #ffffff;
+    --border: #e0ddd5;
+    --red: #c0392b;
+    --green: #1e6b3c;
+    --tag-bg: #e8f0fc;
+    --tag-color: #2255b8;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  /* ======= COVER ======= */
+  .cover {
+    background: var(--primary);
+    color: var(--white);
+    padding: 56px 48px 48px;
+    position: relative;
+    overflow: hidden;
+  }
+  .cover::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 280px; height: 280px;
+    border-radius: 50%;
+    background: rgba(201,168,76,0.15);
+  }
+  .cover::after {
+    content: '';
+    position: absolute;
+    bottom: -40px; left: 40%;
+    width: 160px; height: 160px;
+    border-radius: 50%;
+    background: rgba(201,168,76,0.08);
+  }
+  .cover-label {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--primary);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding: 4px 12px;
+    border-radius: 2px;
+    margin-bottom: 20px;
+  }
+  .cover h1 {
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  .cover h1 span {
+    color: var(--accent);
+  }
+  .cover-sub {
+    font-size: 15px;
+    opacity: 0.75;
+    margin-bottom: 32px;
+  }
+  .cover-meta {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    opacity: 0.8;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding-top: 20px;
+    margin-top: 24px;
+  }
+  .cover-meta span { display: flex; align-items: center; gap: 6px; }
+  .cover-meta b { color: var(--accent); }
+
+  /* ======= SECTION WRAP ======= */
+  .wrap {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* ======= SECTION ======= */
+  section { padding: 40px 0 32px; border-bottom: 1px solid var(--border); }
+  section:last-child { border-bottom: none; }
+
+  .section-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .section-label::before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 2px;
+    background: var(--accent);
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 20px;
+    line-height: 1.4;
+  }
+  h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 10px;
+  }
+
+  /* ======= CARDS ======= */
+  .card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 24px 28px;
+    margin-bottom: 16px;
+  }
+  .card-primary {
+    border-left: 4px solid var(--accent);
+  }
+  .card-blue {
+    border-left: 4px solid #2255b8;
+  }
+
+  /* ======= BANT TABLE ======= */
+  .bant-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+  .bant-item {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 18px 20px;
+  }
+  .bant-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .bant-label .bant-char {
+    background: var(--primary);
+    color: var(--white);
+    font-size: 13px;
+    font-weight: 900;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bant-ok {
+    display: inline-block;
+    background: #e6f4ec;
+    color: var(--green);
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 12px;
+    margin-left: 8px;
+  }
+
+  /* ======= PROPOSAL PLAN ======= */
+  .plan-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 20px;
+  }
+  .plan-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .plan-header {
+    background: var(--primary);
+    color: var(--white);
+    padding: 14px 20px;
+  }
+  .plan-header .plan-num {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    margin-bottom: 4px;
+  }
+  .plan-header h3 {
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--white);
+    margin-bottom: 2px;
+    line-height: 1.4;
+  }
+  .plan-header .plan-format {
+    font-size: 12px;
+    opacity: 0.7;
+  }
+  .plan-body { padding: 18px 20px; }
+  .plan-price {
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--primary);
+    margin-bottom: 14px;
+    line-height: 1;
+  }
+  .plan-price span {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--muted);
+  }
+  .plan-tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--tag-color);
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 9px;
+    border-radius: 3px;
+    margin-right: 4px;
+    margin-bottom: 8px;
+  }
+  .plan-reason {
+    margin-top: 12px;
+    border-top: 1px solid var(--border);
+    padding-top: 12px;
+  }
+  .plan-reason h4 {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 0.05em;
+    margin-bottom: 8px;
+  }
+  .plan-reason ul {
+    padding-left: 16px;
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .plan-reason ul li { margin-bottom: 4px; }
+  .plan-reason ul li strong { color: var(--text); }
+
+  /* ======= THEME BOXES ======= */
+  .theme-box {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  .theme-header {
+    background: var(--accent-light);
+    border-bottom: 2px solid var(--accent);
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .theme-num {
+    background: var(--accent);
+    color: var(--primary);
+    font-size: 13px;
+    font-weight: 900;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .theme-title { font-size: 16px; font-weight: 800; color: var(--primary); line-height: 1.4; }
+  .theme-sub { font-size: 12px; color: var(--muted); margin-top: 2px; }
+  .theme-body { padding: 20px 24px; }
+  .theme-body p { font-size: 13px; color: var(--muted); margin-bottom: 14px; }
+  .reason-list {
+    list-style: none;
+    padding: 0;
+  }
+  .reason-list li {
+    display: flex;
+    gap: 10px;
+    font-size: 13px;
+    padding: 8px 0;
+    border-bottom: 1px dashed var(--border);
+    align-items: flex-start;
+  }
+  .reason-list li:last-child { border-bottom: none; }
+  .reason-icon {
+    color: var(--accent);
+    font-weight: 900;
+    font-size: 14px;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  /* ======= INFO TABLE ======= */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  th {
+    background: var(--primary);
+    color: var(--white);
+    padding: 10px 14px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  td {
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--border);
+    background: var(--white);
+  }
+  tr:last-child td { border-bottom: none; }
+  .td-label { font-weight: 700; color: var(--primary); width: 130px; }
+
+  /* ======= URGENT BOX ======= */
+  .urgent-box {
+    background: #fff8e1;
+    border: 2px solid var(--accent);
+    border-radius: 10px;
+    padding: 24px 28px;
+    margin-top: 32px;
+    position: relative;
+  }
+  .urgent-label {
+    position: absolute;
+    top: -12px;
+    left: 20px;
+    background: var(--accent);
+    color: var(--primary);
+    font-size: 11px;
+    font-weight: 800;
+    padding: 3px 14px;
+    border-radius: 12px;
+    letter-spacing: 0.05em;
+  }
+  .urgent-box h3 {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 6px;
+  }
+  .urgent-box p {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 16px;
+  }
+  .slot-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+  .slot-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px 16px;
+  }
+  .slot-card .slot-name {
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 4px;
+  }
+  .slot-card .slot-price {
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--red);
+  }
+  .slot-card .slot-price span {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--muted);
+  }
+  .deadline-notice {
+    background: var(--primary);
+    color: var(--white);
+    border-radius: 6px;
+    padding: 10px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  /* ======= FOOTER ======= */
+  .footer {
+    background: var(--primary);
+    color: rgba(255,255,255,0.8);
+    text-align: center;
+    padding: 28px 24px;
+    font-size: 12px;
+    margin-top: 40px;
+  }
+  .footer strong { color: var(--white); }
+
+  /* ======= HIGHLIGHT ======= */
+  .hl { color: var(--accent); font-weight: 700; }
+  .num-big {
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--primary);
+    line-height: 1;
+  }
+  .num-unit { font-size: 13px; color: var(--muted); }
+  .stat-row {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    margin: 16px 0;
+  }
+  .stat-item { text-align: center; }
+
+  @media print {
+    body { background: white; }
+    .cover { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== COVER ===== -->
+<div class="cover">
+  <div class="wrap">
+    <div class="cover-label">企画提案書 ｜ 2026.06.30</div>
+    <h1>エステティック通信 2026年<span>10月号</span><br>メニュー・メソッド特集<br>掲載のご提案</h1>
+    <p class="cover-sub">株式会社Skin Office 御中（CURENEX / SALONNE PRO）</p>
+    <div class="cover-meta">
+      <span><b>媒体</b> エステティック通信（株式会社新東通信）</span>
+      <span><b>発行部数</b> 20,000部/月</span>
+      <span><b>申込〆切</b> 2026年7月22日（水）</span>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+<!-- ===== WHY NOW ===== -->
+<section>
+  <div class="section-label">Why Now</div>
+  <h2>今、この特集に掲載すべき理由</h2>
+
+  <div class="card card-primary">
+    <h3>10月号は「年間で最も購買意欲が高まる号」です</h3>
+    <p style="font-size:13px; color:var(--muted); margin-top:8px;">
+      10月は全国のサロン経営者が<strong>翌年の年度計画立案・メニュー刷新・設備投資の意思決定を行う時期</strong>です。
+      メニュー・メソッド特集号は「このサロンでしか受けられない体験価値」を求めるサロンオーナーに向けた、年に一度の集中特集です。
+    </p>
+    <div class="stat-row" style="margin-top:20px;">
+      <div class="stat-item">
+        <div class="num-big">20,000<span class="num-unit">部</span></div>
+        <div style="font-size:12px; color:var(--muted);">発行部数/月</div>
+      </div>
+      <div class="stat-item">
+        <div class="num-big">90<span class="num-unit">%</span></div>
+        <div style="font-size:12px; color:var(--muted);">読者が最終決裁権者</div>
+      </div>
+      <div class="stat-item">
+        <div class="num-big">93<span class="num-unit">%</span></div>
+        <div style="font-size:12px; color:var(--muted);">広告信頼度</div>
+      </div>
+      <div class="stat-item">
+        <div class="num-big">36<span class="num-unit">%</span></div>
+        <div style="font-size:12px; color:var(--muted);">導入契約率</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>フェイシャル市場は成長フェーズ ── Skin Officeが狙うべき市場の中心にいる</h3>
+    <p style="font-size:13px; color:var(--muted); margin-top:8px;">
+      矢野経済研究所データによると、国内エステ市場（3,043億円超）はフェイシャル分野が
+      <span class="hl">+87億円成長</span>と拡大傾向。PDRNやエクソソームといった
+      韓国クリニック由来の先端成分は「独自メソッドを持つサロン」の差別化軸として最も注目度が高い領域です。
+      CURENEXが提供する「水光ケア」「発光美肌」の概念は、この特集読者の課題と直接合致します。
+    </p>
+  </div>
+</section>
+
+
+<!-- ===== THEME PROPOSALS ===== -->
+<section>
+  <div class="section-label">テーマ案</div>
+  <h2>掲載テーマ提案 2案</h2>
+  <p style="font-size:13px; color:var(--muted); margin-bottom:24px;">
+    CURENEXの製品特性・読者の課題・特集コンセプトを踏まえ、
+    効果的な2つのテーマ案をご提案します。
+  </p>
+
+  <!-- THEME 01 -->
+  <div class="theme-box">
+    <div class="theme-header">
+      <div class="theme-num">1</div>
+      <div>
+        <div class="theme-title">「韓国クリニック発想のPDRN水光プログラム」<br>〜サロンでできる、発光美肌メソッド〜</div>
+        <div class="theme-sub">対象ブランド：CURENEX ／ 推奨プラン：PART01 メソッド特集記事（特別価格 240,000円）</div>
+      </div>
+    </div>
+    <div class="theme-body">
+      <p>
+        CURENEXのPDRN・エクソソーム配合製品を「サロンメニューの一工程」として活用する方法を、
+        施術フロー・使用アイテム・期待効果とともに紹介。「水光肌」「発光美肌」というビジュアルインパクトのある
+        ゴールイメージで、サロンオーナーの「導入したい」を引き出します。
+      </p>
+      <ul class="reason-list">
+        <li>
+          <span class="reason-icon">▶</span>
+          <div><strong>特集コンセプトとの合致度が高い</strong>：PART01は「独自メソッドの開発背景・根拠・導入後の効果事例」を掲載する枠。PDRNの皮膚科学的根拠はこの要件を完全に満たす。</div>
+        </li>
+        <li>
+          <span class="reason-icon">▶</span>
+          <div><strong>読者の差別化ニーズに直撃</strong>：「他では受けられない、根拠のある施術」を求めているサロンオーナーに、韓国クリニック発の成分エビデンスは最大の訴求材料。</div>
+        </li>
+        <li>
+          <span class="reason-icon">▶</span>
+          <div><strong>店販連動で収益構造を提案できる</strong>：施術後の継続ケアとしてデイリーケアスキンブースター（¥6,600）を店販推奨することで、サロン収益拡大のシナリオを一緒に示せる。</div>
+        </li>
+        <li>
+          <span class="reason-icon">▶</span>
+          <div><strong>LINE会員2,700名への配信で拡散効果</strong>：誌面掲載＋WEB転載＋LINE配信の3メディア展開で、開封率70%超の決裁者リストにリーチ。</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- THEME 02 -->
+  <div class="theme-box">
+    <div class="theme-header">
+      <div class="theme-num">2</div>
+      <div>
+        <div class="theme-title">「ヨーロッパ×韓国の最先端プロスキンケアが、日本のサロンを変える」<br>〜CURENEX & SALONNE PROで叶える、クリニック超えのサロン体験〜</div>
+        <div class="theme-sub">対象ブランド：CURENEX + SALONNE PRO ／ 推奨プラン：オリジナル記事（300,000円）</div>
+      </div>
+    </div>
+    <div class="theme-body">
+      <p>
+        株式会社Skin Officeが取り扱う2ブランドをまとめて紹介するオリジナル記事広告。
+        韓国発（CURENEX）とオランダ発（SALONNE PRO）という異なるアプローチの融合を、
+        「クリニック級の成分＋ヨーロッパのプロ施術技術」というストーリーで訴求。
+        ブランド認知・サロン導入・インポーターとしての信頼性を一度に構築できます。
+      </p>
+      <ul class="reason-list">
+        <li>
+          <span class="reason-icon">▶</span>
+          <div><strong>2ブランドを1本で紹介できる</strong>：オリジナル記事はデザインの自由度が高く、2ブランドの特性を比較・補完する形で紹介可能。１回の掲載費で両ブランドの認知を獲得。</div>
+        </li>
+        <li>
+          <span class="reason-icon">▶</span>
+          <div><strong>「輸入卸専門商社」としてのブランディング確立</strong>：単なる製品紹介にとどまらず、Skin Officeが「世界の最先端プロスキンケアを届ける専門商社」として認知されることで、問い合わせ・継続取引の起点になる。</div>
+        </li>
+        <li>
+          <span class="reason-icon">▶</span>
+          <div><strong>見開き展開でインパクト最大化</strong>：オリジナル記事は見開き（2P）展開も可能。ビフォーアフター写真・製品ビジュアルを大きく展開することで読者の記憶への定着率が高まる。</div>
+        </li>
+        <li>
+          <span class="reason-icon">▶</span>
+          <div><strong>中長期的な営業資産として活用できる</strong>：WEB転載記事はURLとして共有・保存が可能。今後のサロン営業時の「実績・掲載証明」として活用でき、信頼獲得ツールになる。</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PLAN COMPARISON ===== -->
+<section>
+  <div class="section-label">掲載プラン</div>
+  <h2>推奨プラン比較</h2>
+  <div class="plan-wrap">
+    <div class="plan-card">
+      <div class="plan-header">
+        <div class="plan-num">案① 推奨</div>
+        <h3>PART01 メソッド特集記事</h3>
+        <div class="plan-format">誌面1P + WEB転載 + LINE配信</div>
+      </div>
+      <div class="plan-body">
+        <div class="plan-price">¥240,000<span>（税別・特別価格）</span></div>
+        <span class="plan-tag">CURENEX向き</span>
+        <span class="plan-tag">LINE配信込</span>
+        <span class="plan-tag">WEB転載</span>
+        <div class="plan-reason">
+          <h4>この案をすすめる理由</h4>
+          <ul>
+            <li><strong>特集本枠への掲載</strong>で読者に「選んで読まれる」効果</li>
+            <li>PDRNの施術メソッドとして<strong>根拠訴求</strong>が可能</li>
+            <li>コスト効率が高く、初回掲載として<strong>リスクが低い</strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="plan-card">
+      <div class="plan-header">
+        <div class="plan-num">案②</div>
+        <h3>オリジナル記事広告</h3>
+        <div class="plan-format">誌面1P〜見開き + WEB転載 + LINE配信</div>
+      </div>
+      <div class="plan-body">
+        <div class="plan-price">¥300,000<span>（税別）</span></div>
+        <span class="plan-tag">2ブランド対応</span>
+        <span class="plan-tag">デザイン自由</span>
+        <span class="plan-tag">見開き可</span>
+        <div class="plan-reason">
+          <h4>この案をすすめる理由</h4>
+          <ul>
+            <li>ブランドの<strong>世界観・ストーリー</strong>を自由に表現</li>
+            <li>2ブランドを<strong>1回の掲載</strong>でまとめて紹介可能</li>
+            <li><strong>長期的な営業資産</strong>として使い続けられる</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SCHEDULE ===== -->
+<section>
+  <div class="section-label">スケジュール</div>
+  <h2>今後のスケジュール</h2>
+  <table>
+    <tr>
+      <th>日程</th>
+      <th>マイルストーン</th>
+      <th>内容</th>
+    </tr>
+    <tr>
+      <td class="td-label">〜2026年7月22日（水）</td>
+      <td><strong>広告申込〆切</strong></td>
+      <td>掲載枠は限定数のため、お早めにご連絡ください</td>
+    </tr>
+    <tr>
+      <td class="td-label">2026年7月31日（金）</td>
+      <td><strong>素材・入稿〆切</strong></td>
+      <td>写真・テキスト等の掲載素材のご提出期限</td>
+    </tr>
+    <tr>
+      <td class="td-label">2026年9月10日（木）</td>
+      <td><strong>発行日</strong></td>
+      <td>全国20,000部配布・WEB公開・LINE配信</td>
+    </tr>
+    <tr>
+      <td class="td-label">2026年9月10日〜</td>
+      <td><strong>2次利用解禁</strong></td>
+      <td>SNS等への外部展開が可能となります</td>
+    </tr>
+  </table>
+</section>
+
+<!-- ===== VACANCY ===== -->
+<div class="urgent-box">
+  <div class="urgent-label">🔔 限定空き枠のご案内</div>
+  <h3>9月号にブランド枠の空きが出ました — 特別価格でご案内します</h3>
+  <p>
+    9月号のブランド掲載枠にキャンセルが発生し、通常より<strong>お得な価格</strong>でご案内が可能です。
+    10月号掲載のご検討と合わせて、ぜひご検討ください。
+  </p>
+  <div class="slot-grid">
+    <div class="slot-card">
+      <div class="slot-name">表4（裏表紙）</div>
+      <div class="slot-price">¥300,000<span>（税別）</span></div>
+      <div style="font-size:12px; color:var(--red); margin-top:4px; font-weight:700;">定価 ¥700,000 → 特別価格</div>
+      <div style="font-size:12px; color:var(--muted); margin-top:4px;">最高視認率・手元保存率No.1の枠</div>
+    </div>
+    <div class="slot-card">
+      <div class="slot-name">ファーストインプレッション（先頭見開き）</div>
+      <div class="slot-price">¥250,000<span>（税別）</span></div>
+      <div style="font-size:12px; color:var(--red); margin-top:4px; font-weight:700;">定価 ¥600,000 → 特別価格</div>
+      <div style="font-size:12px; color:var(--muted); margin-top:4px;">誌面を開いた瞬間に目に入る最強の第一印象枠</div>
+    </div>
+  </div>
+  <div class="deadline-notice">
+    ⏰ &nbsp;入稿〆切：<strong>2026年7月16日（木）</strong>　— 残り枠わずかです。お早めにご連絡ください。
+  </div>
+</div>
+
+</div><!-- /wrap -->
+
+<!-- ===== FOOTER ===== -->
+<div class="footer">
+  <strong>エステティック通信 ／ 株式会社新東通信</strong><br>
+  estsu.info@shinto-tsushin.co.jp　｜　03-4500-7480<br>
+  <span style="font-size:11px; opacity:0.6; margin-top:6px; display:block;">本資料は社内提案用として作成されています。内容・金額は変更となる場合があります。</span>
+</div>
+
+</body>
+</html>
